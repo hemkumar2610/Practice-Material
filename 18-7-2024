@@ -43,3 +43,10 @@ VALUES
 (14, 'Book14', 'Cat14', 5400),
 (15, 'Book15', 'Cat15', 3200),
 (16, 'BookChanged', 'CatChanged', 1500);
+
+create or replace file format demo_csv_file_format
+    type = 'csv' 
+    compression = 'none' 
+    field_delimiter = ','
+    field_optionally_enclosed_by = 'none'
+    skip_header = 1 ;
